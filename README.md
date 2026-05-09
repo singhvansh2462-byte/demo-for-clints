@@ -1,287 +1,181 @@
-
-<!-- Home Page - Vansh Portfolio -->
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <title>Vansh | Premium Web Designer</title>
-    <style>
-        body { font-family: 'Montserrat', sans-serif; background-color: #14121d; color: #ffffff; scroll-behavior: smooth; }
-        .glass { background: rgba(58, 55, 68, 0.3); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
-    </style>
+  <meta charset="UTF-8">
+  <title>Vansh | Portfolio</title>
+  <style>
+    body {
+      background: #0f0f0f;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      scroll-behavior: smooth;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: #111;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hire-btn {
+      background: #00f;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+    section {
+      min-height: 100vh;
+      padding: 120px 50px 50px;
+    }
+    h1, h2 {
+      background: linear-gradient(90deg, #00f, #f0f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-3d {
+      background: #222;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+      display: inline-block;
+      width: 250px;
+    }
+    .card-3d:hover {
+      transform: perspective(1000px) rotateY(10deg) scale(1.05);
+    }
+    .btn-3d {
+      padding: 10px 20px;
+      background: #00f;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .btn-3d:hover {
+      transform: perspective(500px) translateZ(20px);
+    }
+    form input, form textarea {
+      width: 300px;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="sticky top-0 z-50 glass h-20 flex items-center px-8 justify-between border-b border-white/10">
-        <div class="text-3xl font-black tracking-tighter text-[#5800ff]">VANSH</div>
-        <div class="hidden md:flex gap-8 text-sm font-medium">
-            <a href="index.html" class="text-[#5800ff] border-b-2 border-[#5800ff] pb-1">Home</a>
-            <a href="portfolio.html" class="hover:text-[#5800ff] transition-colors">Portfolio</a>
-            <a href="pricing.html" class="hover:text-[#5800ff] transition-colors">Pricing</a>
-            <a href="contact.html" class="hover:text-[#5800ff] transition-colors">Contact</a>
-        </div>
-        <a href="pricing.html" class="bg-[#5800ff] text-white px-6 py-2 rounded-lg font-bold hover:scale-105 transition-transform">Hire Me</a>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="min-h-[80vh] flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-20">
-        <div class="max-w-2xl">
-            <span class="inline-block px-4 py-1 rounded-full border border-white/20 text-[10px] tracking-widest uppercase mb-6 text-gray-400">Digital Craftsmanship</span>
-            <h1 class="text-5xl md:text-7xl font-black leading-tight mb-8">
-                Designing <span class="text-[#5800ff]">Premium</span> Websites That Speak <span class="text-[#5800ff]">Your Brand.</span>
-            </h1>
-            <p class="text-lg text-gray-400 mb-10 max-w-lg">
-                I’m Vansh, only 15, a creative web designer from India, passionate about building modern, attractive, and responsive websites for businesses and creators.
-            </p>
-            <div class="flex items-center gap-6">
-                <a href="contact.html" class="bg-[#5800ff] px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:shadow-[0_0_20px_rgba(88,0,255,0.4)] transition-all">
-                    GET STARTED 🚀
-                </a>
-                <span class="text-gray-400 text-sm">Let’s build your dream website today!</span>
-            </div>
-            
-            <div class="mt-20 flex gap-12">
-                <div>
-                    <div class="text-4xl font-black">15+</div>
-                    <div class="text-xs text-gray-500 uppercase tracking-widest mt-2">Years of Age</div>
-                </div>
-                <div>
-                    <div class="text-4xl font-black">India</div>
-                    <div class="text-xs text-gray-500 uppercase tracking-widest mt-2">Based In</div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="mt-20 md:mt-0 relative">
-            <div class="w-80 h-80 md:w-[500px] md:h-[500px] bg-gradient-to-tr from-[#5800ff] to-purple-400 rounded-3xl rotate-3 absolute -z-10 opacity-20 blur-2xl"></div>
-            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800" alt="UI Design" class="w-80 md:w-[500px] rounded-3xl shadow-2xl">
-        </div>
-    </section>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+    <a href="#contact" class="hire-btn">Hire Me</a>
+  </nav>
 
-    <!-- Footer -->
-    <footer class="bg-[#0f0d18] py-12 px-8 border-t border-white/10 mt-20">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="text-2xl font-black">VANSH</div>
-            <div class="flex flex-col md:flex-row gap-8 text-sm text-gray-400">
-                <span>Instagram: vanshcodes.x</span>
-                <span>Email: singhvansh2462@gmail.com</span>
-                <span>Phone: +91 9456853697</span>
-            </div>
-            <div class="text-xs text-gray-600">© 2024 VANSH. DIGITAL CRAFTSMANSHIP.</div>
-        </div>
-    </footer>
-</body>
-</html>
+  <!-- Home -->
+  <section id="home">
+    <h1>DIGITAL CRAFTSMANSHIP</h1>
+    <p>Designing Premium Websites That Speak Your Brand.</p>
+    <p>I’m Vansh, only 15, a creative web designer from India...</p>
+    <button class="btn-3d">Get Started</button>
+  </section>
 
----
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h2>My Work</h2>
+    <div class="card-3d">
+      <h3>Business Website</h3>
+      <p>Modern UI overhaul focusing on conversion...</p>
+    </div>
+    <div class="card-3d">
+      <h3>Digital Storefront</h3>
+      <p>Responsive retail experience designed for seamless shopping.</p>
+    </div>
+  </section>
 
+  <!-- Services -->
+  <section id="services">
+    <h2>Services I Offer</h2>
+    <div class="card-3d">UI/UX Design</div>
+    <div class="card-3d">Branding & Identity</div>
+    <div class="card-3d">Web Design & Development</div>
+  </section>
 
-<!-- Portfolio Page - Vansh Portfolio -->
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <title>Portfolio - Vansh Designs</title>
-    <style>
-        body { font-family: 'Montserrat', sans-serif; background-color: #14121d; color: #ffffff; }
-        .glass { background: rgba(58, 55, 68, 0.3); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
-    </style>
-</head>
-<body>
-    <nav class="sticky top-0 z-50 glass h-20 flex items-center px-8 justify-between border-b border-white/10">
-        <div class="text-3xl font-black tracking-tighter text-[#5800ff]">VANSH</div>
-        <div class="hidden md:flex gap-8 text-sm font-medium">
-            <a href="index.html" class="hover:text-[#5800ff] transition-colors">Home</a>
-            <a href="portfolio.html" class="text-[#5800ff] border-b-2 border-[#5800ff] pb-1">Portfolio</a>
-            <a href="pricing.html" class="hover:text-[#5800ff] transition-colors">Pricing</a>
-            <a href="contact.html" class="hover:text-[#5800ff] transition-colors">Contact</a>
-        </div>
-        <a href="pricing.html" class="bg-[#5800ff] text-white px-6 py-2 rounded-lg font-bold">Hire Me</a>
-    </nav>
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Freelance web designer specializing in premium website design and branding. Skilled in HTML, CSS, JavaScript, Figma, Adobe XD, Photoshop.</p>
+    <div class="card-3d">HTML/CSS</div>
+    <div class="card-3d">JavaScript</div>
+    <div class="card-3d">Figma</div>
+    <div class="card-3d">Adobe XD</div>
+  </section>
 
-    <section class="px-8 md:px-20 py-20">
-        <h1 class="text-6xl font-black mb-6">Selected <span class="text-[#5800ff]">Works</span></h1>
-        <p class="text-gray-400 text-lg max-w-2xl mb-16">
-            A showcase of premium digital experiences tailored for forward-thinking brands and creators.
-        </p>
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Let’s Connect</h2>
+    <form>
+      <input type="text" placeholder="Name"><br>
+      <input type="email" placeholder="Email"><br>
+      <textarea placeholder="Message"></textarea><br>
+      <button class="btn-3d">Send Message</button>
+    </form>
+    <p>Instagram: vanshcodes.x</p>
+    <p>Email: anubhavv8777@gmail.com</p>
+    <p>Phone: +91 9456853697</p>
+  </section>
 
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="group relative overflow-hidden rounded-3xl glass">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" class="w-full h-[400px] object-cover opacity-60 group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-[#14121d] to-transparent">
-                    <span class="text-xs font-bold uppercase text-[#5800ff] mb-2 block">Corporate Tech</span>
-                    <h3 class="text-3xl font-bold mb-2">Business Website</h3>
-                    <p class="text-gray-400">Modern UI overhaul focusing on conversion.</p>
-                </div>
-            </div>
-            <div class="group relative overflow-hidden rounded-3xl glass">
-                <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&q=80&w=800" class="w-full h-[400px] object-cover opacity-60 group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-[#14121d] to-transparent">
-                    <span class="text-xs font-bold uppercase text-[#5800ff] mb-2 block">E-commerce</span>
-                    <h3 class="text-3xl font-bold mb-2">Digital Storefront</h3>
-                    <p class="text-gray-400">Responsive retail experience for high-growth brands.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Pricing -->
+  <section id="pricing">
+    <h2>Choose Your Plan</h2>
+    <div class="card-3d">Basic Website ₹5,000 – ₹10,000</div>
+    <div class="card-3d">Standard Website ₹12,000 – ₹25,000</div>
+    <div class="card-3d">Advanced Website ₹30,000 – ₹70,000+</div>
+    <div class="card-3d">E-commerce ₹40,000 – ₹1,50,000+</div>
+  </section>
 
-    <footer class="bg-[#0f0d18] py-12 px-8 border-t border-white/10 mt-20">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="text-2xl font-black">VANSH</div>
-            <div class="text-xs text-gray-600">© 2024 VANSH. DIGITAL CRAFTSMANSHIP.</div>
-        </div>
-    </footer>
-</body>
-</html>
+  <script>
+    document.querySelectorAll('.card-3d').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.transform =
+          `perspective(1000px) rotateY(${(x/rect.width - 0.5)*20}deg) rotateX(${(y/rect.height - 0.5)*-20}deg)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateY(0deg) rotateX(0deg)';
+      });
+    });
+  </script>
 
----
-
-<!-- Pricing Page - Vansh Portfolio -->
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <title>Pricing Plans - Vansh Portfolio</title>
-    <style>
-        body { font-family: 'Montserrat', sans-serif; background-color: #14121d; color: #ffffff; }
-        .glass { background: rgba(58, 55, 68, 0.3); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .plan-card:hover { transform: translateY(-10px); border-color: #5800ff; transition: all 0.3s ease; }
-    </style>
-</head>
-<body>
-    <nav class="sticky top-0 z-50 glass h-20 flex items-center px-8 justify-between border-b border-white/10">
-        <div class="text-3xl font-black tracking-tighter text-[#5800ff]">VANSH</div>
-        <div class="hidden md:flex gap-8 text-sm font-medium">
-            <a href="index.html" class="hover:text-[#5800ff] transition-colors">Home</a>
-            <a href="portfolio.html" class="hover:text-[#5800ff] transition-colors">Portfolio</a>
-            <a href="pricing.html" class="text-[#5800ff] border-b-2 border-[#5800ff] pb-1">Pricing</a>
-            <a href="contact.html" class="hover:text-[#5800ff] transition-colors">Contact</a>
-        </div>
-        <a href="pricing.html" class="bg-[#5800ff] text-white px-6 py-2 rounded-lg font-bold">Hire Me</a>
-    </nav>
-
-    <section class="px-8 md:px-20 py-24 text-center">
-        <h1 class="text-6xl font-black mb-6">Choose <span class="text-[#5800ff]">Your Plan</span></h1>
-        <p class="text-gray-400 text-lg mb-20">Select the perfect fit for your business scale and ambitions.</p>
-        
-        <div class="grid md:grid-cols-4 gap-8 text-left">
-            <!-- Basic -->
-            <div class="plan-card glass p-8 rounded-3xl flex flex-col border border-white/10">
-                <h3 class="text-2xl font-black mb-2">Basic Website</h3>
-                <span class="text-[#5800ff] text-[10px] font-bold uppercase tracking-widest mb-6">(Starter)</span>
-                <div class="text-3xl font-black mb-10">₹5,000 <span class="text-sm font-normal text-gray-500">– ₹10k</span></div>
-                <ul class="space-y-4 mb-10 text-gray-300 text-sm flex-grow">
-                    <li>✔ 1–3 Pages</li>
-                    <li>✔ Mobile Responsive</li>
-                    <li>✔ Basic SEO</li>
-                </ul>
-                <button class="w-full py-4 rounded-xl border border-white/20 font-bold hover:bg-white/5 transition-colors">SELECT PLAN</button>
-            </div>
-            <!-- Standard -->
-            <div class="plan-card glass p-8 rounded-3xl flex flex-col border border-[#5800ff]/50 relative">
-                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#5800ff] px-4 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">Most Popular</div>
-                <h3 class="text-2xl font-black mb-2">Standard</h3>
-                <span class="text-[#5800ff] text-[10px] font-bold uppercase tracking-widest mb-6">(Business)</span>
-                <div class="text-3xl font-black mb-10">₹12,000 <span class="text-sm font-normal text-gray-500">– ₹25k</span></div>
-                <ul class="space-y-4 mb-10 text-gray-300 text-sm flex-grow">
-                    <li>✔ 4–8 Pages</li>
-                    <li>✔ Custom Design</li>
-                    <li>✔ WhatsApp Integration</li>
-                </ul>
-                <button class="w-full py-4 rounded-xl bg-[#5800ff] text-white font-bold">SELECT PLAN</button>
-            </div>
-            <!-- Advanced -->
-            <div class="plan-card glass p-8 rounded-3xl flex flex-col border border-white/10">
-                <h3 class="text-2xl font-black mb-2">Advanced</h3>
-                <span class="text-[#5800ff] text-[10px] font-bold uppercase tracking-widest mb-6">(Professional)</span>
-                <div class="text-3xl font-black mb-10">₹30,000 <span class="text-sm font-normal text-gray-500">– ₹70k+</span></div>
-                <ul class="space-y-4 mb-10 text-gray-300 text-sm flex-grow">
-                    <li>✔ 8–15 Pages</li>
-                    <li>✔ Custom UI/UX</li>
-                    <li>✔ Admin Panel</li>
-                </ul>
-                <button class="w-full py-4 rounded-xl border border-white/20 font-bold hover:bg-white/5">SELECT PLAN</button>
-            </div>
-            <!-- E-commerce -->
-            <div class="plan-card glass p-8 rounded-3xl flex flex-col border border-white/10">
-                <h3 class="text-2xl font-black mb-2">E-commerce</h3>
-                <span class="text-[#5800ff] text-[10px] font-bold uppercase tracking-widest mb-6">(Scale)</span>
-                <div class="text-3xl font-black mb-10">₹40,000 <span class="text-sm font-normal text-gray-500">– ₹1.5L+</span></div>
-                <ul class="space-y-4 mb-10 text-gray-300 text-sm flex-grow">
-                    <li>✔ Product Listings</li>
-                    <li>✔ Shopping Cart</li>
-                    <li>✔ Payment Gateway</li>
-                </ul>
-                <button class="w-full py-4 rounded-xl border border-white/20 font-bold hover:bg-white/5">SELECT PLAN</button>
-            </div>
-        </div>
-    </section>
-</body>
-</html>
-
----
-
-
-<!-- Contact Page - Vansh Portfolio -->
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <title>Contact Vansh</title>
-    <style>
-        body { font-family: 'Montserrat', sans-serif; background-color: #14121d; color: #ffffff; }
-        .glass { background: rgba(58, 55, 68, 0.3); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        input, textarea { background: transparent !important; border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important; outline: none; }
-        input:focus, textarea:focus { border-bottom-color: #5800ff !important; }
-    </style>
-</head>
-<body>
-    <nav class="sticky top-0 z-50 glass h-20 flex items-center px-8 justify-between border-b border-white/10">
-        <div class="text-3xl font-black tracking-tighter text-[#5800ff]">VANSH</div>
-        <div class="hidden md:flex gap-8 text-sm font-medium">
-            <a href="index.html" class="hover:text-[#5800ff] transition-colors">Home</a>
-            <a href="portfolio.html" class="hover:text-[#5800ff] transition-colors">Portfolio</a>
-            <a href="pricing.html" class="hover:text-[#5800ff] transition-colors">Pricing</a>
-            <a href="contact.html" class="text-[#5800ff] border-b-2 border-[#5800ff] pb-1">Contact</a>
-        </div>
-        <a href="pricing.html" class="bg-[#5800ff] text-white px-6 py-2 rounded-lg font-bold">Hire Me</a>
-    </nav>
-
-    <section class="px-8 md:px-20 py-24 flex flex-col md:flex-row gap-20">
-        <div class="md:w-1/3">
-            <h1 class="text-6xl font-black mb-10">Let's <span class="text-[#5800ff]">Talk.</span></h1>
-            <div class="glass p-8 rounded-3xl space-y-6">
-                <p class="text-gray-300">Skilled in premium UI/UX design, development, and branding.</p>
-                <div class="space-y-4 text-sm text-gray-400">
-                    <p>📸 Instagram: vanshcodes.x</p>
-                    <p>📧 singhvansh2462@gmail.com</p>
-                    <p>📞 Phone: +91 9456853697</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="md:w-2/3">
-            <div class="glass p-12 rounded-3xl">
-                <form action="mailto:singhvansh2462@gmail.com" method="post" enctype="text/plain" class="space-y-12">
-                    <input type="text" name="name" placeholder="Name" class="w-full py-4 text-xl" required>
-                    <input type="email" name="email" placeholder="Email" class="w-full py-4 text-xl" required>
-                    <textarea name="message" rows="4" placeholder="Your Message" class="w-full py-4 text-xl" required></textarea>
-                    <button type="submit" class="bg-[#5800ff] text-white px-10 py-4 rounded-xl font-bold hover:shadow-[0_0_20px_rgba(88,0,255,0.4)] transition-all">Send Message ➤</button>
-                </form>
-            </div>
-        </div>
-    </section>
 </body>
 </html>
