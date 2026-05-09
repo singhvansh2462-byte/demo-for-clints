@@ -1,10 +1,4 @@
-# Vansh Portfolio - Full Website Code
 
-Niche aapke portfolio ke sabhi pages ka code ek sath diya gaya hai. Aap inhe alag-alag files mein save kar sakte hain.
-
----
-
-## 1. index.html (Home Page)
 <!-- Home Page - Vansh Portfolio -->
 <!DOCTYPE html>
 <html lang="hi">
@@ -13,9 +7,9 @@ Niche aapke portfolio ke sabhi pages ka code ek sath diya gaya hai. Aap inhe ala
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <title>Home - Vansh Portfolio</title>
+    <title>Vansh | Premium Web Designer</title>
     <style>
-        body { font-family: 'Montserrat', sans-serif; background-color: #14121d; color: #ffffff; }
+        body { font-family: 'Montserrat', sans-serif; background-color: #14121d; color: #ffffff; scroll-behavior: smooth; }
         .glass { background: rgba(58, 55, 68, 0.3); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
     </style>
 </head>
@@ -26,8 +20,7 @@ Niche aapke portfolio ke sabhi pages ka code ek sath diya gaya hai. Aap inhe ala
         <div class="hidden md:flex gap-8 text-sm font-medium">
             <a href="index.html" class="text-[#5800ff] border-b-2 border-[#5800ff] pb-1">Home</a>
             <a href="portfolio.html" class="hover:text-[#5800ff] transition-colors">Portfolio</a>
-            <a href="services.html" class="hover:text-[#5800ff] transition-colors">Services</a>
-            <a href="about.html" class="hover:text-[#5800ff] transition-colors">About</a>
+            <a href="pricing.html" class="hover:text-[#5800ff] transition-colors">Pricing</a>
             <a href="contact.html" class="hover:text-[#5800ff] transition-colors">Contact</a>
         </div>
         <a href="pricing.html" class="bg-[#5800ff] text-white px-6 py-2 rounded-lg font-bold hover:scale-105 transition-transform">Hire Me</a>
@@ -36,7 +29,7 @@ Niche aapke portfolio ke sabhi pages ka code ek sath diya gaya hai. Aap inhe ala
     <!-- Hero Section -->
     <section class="min-h-[80vh] flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-20">
         <div class="max-w-2xl">
-            <span class="inline-block px-4 py-1 rounded-full border border-white/20 text-[10px] tracking-widest uppercase mb-6">Digital Craftsmanship</span>
+            <span class="inline-block px-4 py-1 rounded-full border border-white/20 text-[10px] tracking-widest uppercase mb-6 text-gray-400">Digital Craftsmanship</span>
             <h1 class="text-5xl md:text-7xl font-black leading-tight mb-8">
                 Designing <span class="text-[#5800ff]">Premium</span> Websites That Speak <span class="text-[#5800ff]">Your Brand.</span>
             </h1>
@@ -85,7 +78,7 @@ Niche aapke portfolio ke sabhi pages ka code ek sath diya gaya hai. Aap inhe ala
 
 ---
 
-## 2. portfolio.html
+
 <!-- Portfolio Page - Vansh Portfolio -->
 <!DOCTYPE html>
 <html lang="hi">
@@ -94,50 +87,50 @@ Niche aapke portfolio ke sabhi pages ka code ek sath diya gaya hai. Aap inhe ala
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <title>My Work - Vansh Portfolio</title>
+    <title>Portfolio - Vansh Designs</title>
     <style>
         body { font-family: 'Montserrat', sans-serif; background-color: #14121d; color: #ffffff; }
         .glass { background: rgba(58, 55, 68, 0.3); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
     </style>
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="sticky top-0 z-50 glass h-20 flex items-center px-8 justify-between border-b border-white/10">
         <div class="text-3xl font-black tracking-tighter text-[#5800ff]">VANSH</div>
         <div class="hidden md:flex gap-8 text-sm font-medium">
             <a href="index.html" class="hover:text-[#5800ff] transition-colors">Home</a>
             <a href="portfolio.html" class="text-[#5800ff] border-b-2 border-[#5800ff] pb-1">Portfolio</a>
-            <a href="services.html" class="hover:text-[#5800ff] transition-colors">Services</a>
-            <a href="about.html" class="hover:text-[#5800ff] transition-colors">About</a>
+            <a href="pricing.html" class="hover:text-[#5800ff] transition-colors">Pricing</a>
             <a href="contact.html" class="hover:text-[#5800ff] transition-colors">Contact</a>
         </div>
         <a href="pricing.html" class="bg-[#5800ff] text-white px-6 py-2 rounded-lg font-bold">Hire Me</a>
     </nav>
 
-    <!-- Portfolio Section -->
     <section class="px-8 md:px-20 py-20">
-        <h1 class="text-6xl font-black mb-6">My <span class="text-[#5800ff]">Work</span></h1>
+        <h1 class="text-6xl font-black mb-6">Selected <span class="text-[#5800ff]">Works</span></h1>
         <p class="text-gray-400 text-lg max-w-2xl mb-16">
-            A showcase of projects I’ve designed for clients, highlighting creativity and functionality.
+            A showcase of premium digital experiences tailored for forward-thinking brands and creators.
         </p>
 
         <div class="grid md:grid-cols-2 gap-8">
             <div class="group relative overflow-hidden rounded-3xl glass">
                 <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" class="w-full h-[400px] object-cover opacity-60 group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-[#14121d] to-transparent">
+                    <span class="text-xs font-bold uppercase text-[#5800ff] mb-2 block">Corporate Tech</span>
                     <h3 class="text-3xl font-bold mb-2">Business Website</h3>
+                    <p class="text-gray-400">Modern UI overhaul focusing on conversion.</p>
                 </div>
             </div>
             <div class="group relative overflow-hidden rounded-3xl glass">
                 <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&q=80&w=800" class="w-full h-[400px] object-cover opacity-60 group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-[#14121d] to-transparent">
+                    <span class="text-xs font-bold uppercase text-[#5800ff] mb-2 block">E-commerce</span>
                     <h3 class="text-3xl font-bold mb-2">Digital Storefront</h3>
+                    <p class="text-gray-400">Responsive retail experience for high-growth brands.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-[#0f0d18] py-12 px-8 border-t border-white/10 mt-20">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
             <div class="text-2xl font-black">VANSH</div>
@@ -149,7 +142,6 @@ Niche aapke portfolio ke sabhi pages ka code ek sath diya gaya hai. Aap inhe ala
 
 ---
 
-## 3. pricing.html
 <!-- Pricing Page - Vansh Portfolio -->
 <!DOCTYPE html>
 <html lang="hi">
@@ -171,27 +163,66 @@ Niche aapke portfolio ke sabhi pages ka code ek sath diya gaya hai. Aap inhe ala
         <div class="hidden md:flex gap-8 text-sm font-medium">
             <a href="index.html" class="hover:text-[#5800ff] transition-colors">Home</a>
             <a href="portfolio.html" class="hover:text-[#5800ff] transition-colors">Portfolio</a>
-            <a href="services.html" class="hover:text-[#5800ff] transition-colors">Services</a>
-            <a href="about.html" class="hover:text-[#5800ff] transition-colors">About</a>
+            <a href="pricing.html" class="text-[#5800ff] border-b-2 border-[#5800ff] pb-1">Pricing</a>
             <a href="contact.html" class="hover:text-[#5800ff] transition-colors">Contact</a>
         </div>
         <a href="pricing.html" class="bg-[#5800ff] text-white px-6 py-2 rounded-lg font-bold">Hire Me</a>
     </nav>
 
     <section class="px-8 md:px-20 py-24 text-center">
-        <h1 class="text-6xl font-black mb-20">Choose <span class="text-[#5800ff]">Your Plan</span></h1>
+        <h1 class="text-6xl font-black mb-6">Choose <span class="text-[#5800ff]">Your Plan</span></h1>
+        <p class="text-gray-400 text-lg mb-20">Select the perfect fit for your business scale and ambitions.</p>
+        
         <div class="grid md:grid-cols-4 gap-8 text-left">
-            <!-- Simplified Plan Example -->
+            <!-- Basic -->
             <div class="plan-card glass p-8 rounded-3xl flex flex-col border border-white/10">
-                <h3 class="text-3xl font-black mb-2">Basic</h3>
-                <div class="text-4xl font-black mb-10">₹5,000+</div>
-                <ul class="space-y-4 mb-10 text-gray-300">
+                <h3 class="text-2xl font-black mb-2">Basic Website</h3>
+                <span class="text-[#5800ff] text-[10px] font-bold uppercase tracking-widest mb-6">(Starter)</span>
+                <div class="text-3xl font-black mb-10">₹5,000 <span class="text-sm font-normal text-gray-500">– ₹10k</span></div>
+                <ul class="space-y-4 mb-10 text-gray-300 text-sm flex-grow">
                     <li>✔ 1–3 Pages</li>
-                    <li>✔ Responsive</li>
+                    <li>✔ Mobile Responsive</li>
+                    <li>✔ Basic SEO</li>
                 </ul>
                 <button class="w-full py-4 rounded-xl border border-white/20 font-bold hover:bg-white/5 transition-colors">SELECT PLAN</button>
             </div>
-            <!-- More cards would go here following the same structure -->
+            <!-- Standard -->
+            <div class="plan-card glass p-8 rounded-3xl flex flex-col border border-[#5800ff]/50 relative">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#5800ff] px-4 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">Most Popular</div>
+                <h3 class="text-2xl font-black mb-2">Standard</h3>
+                <span class="text-[#5800ff] text-[10px] font-bold uppercase tracking-widest mb-6">(Business)</span>
+                <div class="text-3xl font-black mb-10">₹12,000 <span class="text-sm font-normal text-gray-500">– ₹25k</span></div>
+                <ul class="space-y-4 mb-10 text-gray-300 text-sm flex-grow">
+                    <li>✔ 4–8 Pages</li>
+                    <li>✔ Custom Design</li>
+                    <li>✔ WhatsApp Integration</li>
+                </ul>
+                <button class="w-full py-4 rounded-xl bg-[#5800ff] text-white font-bold">SELECT PLAN</button>
+            </div>
+            <!-- Advanced -->
+            <div class="plan-card glass p-8 rounded-3xl flex flex-col border border-white/10">
+                <h3 class="text-2xl font-black mb-2">Advanced</h3>
+                <span class="text-[#5800ff] text-[10px] font-bold uppercase tracking-widest mb-6">(Professional)</span>
+                <div class="text-3xl font-black mb-10">₹30,000 <span class="text-sm font-normal text-gray-500">– ₹70k+</span></div>
+                <ul class="space-y-4 mb-10 text-gray-300 text-sm flex-grow">
+                    <li>✔ 8–15 Pages</li>
+                    <li>✔ Custom UI/UX</li>
+                    <li>✔ Admin Panel</li>
+                </ul>
+                <button class="w-full py-4 rounded-xl border border-white/20 font-bold hover:bg-white/5">SELECT PLAN</button>
+            </div>
+            <!-- E-commerce -->
+            <div class="plan-card glass p-8 rounded-3xl flex flex-col border border-white/10">
+                <h3 class="text-2xl font-black mb-2">E-commerce</h3>
+                <span class="text-[#5800ff] text-[10px] font-bold uppercase tracking-widest mb-6">(Scale)</span>
+                <div class="text-3xl font-black mb-10">₹40,000 <span class="text-sm font-normal text-gray-500">– ₹1.5L+</span></div>
+                <ul class="space-y-4 mb-10 text-gray-300 text-sm flex-grow">
+                    <li>✔ Product Listings</li>
+                    <li>✔ Shopping Cart</li>
+                    <li>✔ Payment Gateway</li>
+                </ul>
+                <button class="w-full py-4 rounded-xl border border-white/20 font-bold hover:bg-white/5">SELECT PLAN</button>
+            </div>
         </div>
     </section>
 </body>
@@ -199,7 +230,7 @@ Niche aapke portfolio ke sabhi pages ka code ek sath diya gaya hai. Aap inhe ala
 
 ---
 
-## 4. contact.html
+
 <!-- Contact Page - Vansh Portfolio -->
 <!DOCTYPE html>
 <html lang="hi">
@@ -208,11 +239,12 @@ Niche aapke portfolio ke sabhi pages ka code ek sath diya gaya hai. Aap inhe ala
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <title>Contact - Vansh Portfolio</title>
+    <title>Contact Vansh</title>
     <style>
         body { font-family: 'Montserrat', sans-serif; background-color: #14121d; color: #ffffff; }
         .glass { background: rgba(58, 55, 68, 0.3); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
         input, textarea { background: transparent !important; border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important; outline: none; }
+        input:focus, textarea:focus { border-bottom-color: #5800ff !important; }
     </style>
 </head>
 <body>
@@ -221,22 +253,32 @@ Niche aapke portfolio ke sabhi pages ka code ek sath diya gaya hai. Aap inhe ala
         <div class="hidden md:flex gap-8 text-sm font-medium">
             <a href="index.html" class="hover:text-[#5800ff] transition-colors">Home</a>
             <a href="portfolio.html" class="hover:text-[#5800ff] transition-colors">Portfolio</a>
-            <a href="services.html" class="hover:text-[#5800ff] transition-colors">Services</a>
-            <a href="about.html" class="hover:text-[#5800ff] transition-colors">About</a>
+            <a href="pricing.html" class="hover:text-[#5800ff] transition-colors">Pricing</a>
             <a href="contact.html" class="text-[#5800ff] border-b-2 border-[#5800ff] pb-1">Contact</a>
         </div>
         <a href="pricing.html" class="bg-[#5800ff] text-white px-6 py-2 rounded-lg font-bold">Hire Me</a>
     </nav>
 
     <section class="px-8 md:px-20 py-24 flex flex-col md:flex-row gap-20">
+        <div class="md:w-1/3">
+            <h1 class="text-6xl font-black mb-10">Let's <span class="text-[#5800ff]">Talk.</span></h1>
+            <div class="glass p-8 rounded-3xl space-y-6">
+                <p class="text-gray-300">Skilled in premium UI/UX design, development, and branding.</p>
+                <div class="space-y-4 text-sm text-gray-400">
+                    <p>📸 Instagram: vanshcodes.x</p>
+                    <p>📧 singhvansh2462@gmail.com</p>
+                    <p>📞 Phone: +91 9456853697</p>
+                </div>
+            </div>
+        </div>
+
         <div class="md:w-2/3">
-            <h1 class="text-6xl font-black mb-10">Let’s <span class="text-[#5800ff]">Connect</span></h1>
             <div class="glass p-12 rounded-3xl">
                 <form action="mailto:singhvansh2462@gmail.com" method="post" enctype="text/plain" class="space-y-12">
-                    <input type="text" placeholder="Name" class="w-full py-4 text-xl" required>
-                    <input type="email" placeholder="Email" class="w-full py-4 text-xl" required>
-                    <textarea rows="4" placeholder="Message" class="w-full py-4 text-xl resize-none" required></textarea>
-                    <button type="submit" class="bg-[#5800ff] text-white px-10 py-4 rounded-xl font-bold">Send Message ➤</button>
+                    <input type="text" name="name" placeholder="Name" class="w-full py-4 text-xl" required>
+                    <input type="email" name="email" placeholder="Email" class="w-full py-4 text-xl" required>
+                    <textarea name="message" rows="4" placeholder="Your Message" class="w-full py-4 text-xl" required></textarea>
+                    <button type="submit" class="bg-[#5800ff] text-white px-10 py-4 rounded-xl font-bold hover:shadow-[0_0_20px_rgba(88,0,255,0.4)] transition-all">Send Message ➤</button>
                 </form>
             </div>
         </div>
