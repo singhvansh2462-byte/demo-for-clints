@@ -3,11 +3,12 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Portfolio - VANSH</title>
+<title>VANSH - Portfolio</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@700;800;900&amp;family=Space+Grotesk:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
@@ -78,144 +79,223 @@
                         "margin-mobile": "20px"
                     },
                     "fontFamily": {
-                        "headline-lg": ["Montserrat"],
-                        "display-xl": ["Montserrat"],
-                        "body-md": ["Inter"],
-                        "headline-lg-mobile": ["Montserrat"],
-                        "display-xl-mobile": ["Montserrat"],
-                        "body-lg": ["Inter"],
-                        "label-caps": ["Space Grotesk"]
+                        "headline-lg": ["Montserrat", "sans-serif"],
+                        "display-xl": ["Montserrat", "sans-serif"],
+                        "body-md": ["Inter", "sans-serif"],
+                        "headline-lg-mobile": ["Montserrat", "sans-serif"],
+                        "display-xl-mobile": ["Montserrat", "sans-serif"],
+                        "body-lg": ["Inter", "sans-serif"],
+                        "label-caps": ["Space Grotesk", "sans-serif"]
                     },
                     "fontSize": {
-                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                        "display-xl": ["80px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                        "display-xl-mobile": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}]
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "display-xl": ["80px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "display-xl-mobile": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600" }]
                     }
                 }
             }
         }
     </script>
 <style>
-        .glass-card {
-            background: rgba(32, 30, 42, 0.4);
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .glow-hover:hover {
-            box-shadow: 0 0 30px rgba(202, 190, 255, 0.15);
+        
+        /* Subtle glow for tech feel */
+        .neon-glow {
+            box-shadow: 0 0 40px rgba(202, 190, 255, 0.1);
+        }
+        
+        .btn-primary-glow {
+            box-shadow: 0 0 20px rgba(88, 0, 255, 0.3);
+        }
+        
+        .btn-primary-glow:hover {
+            box-shadow: 0 0 35px rgba(88, 0, 255, 0.5);
         }
     </style>
 </head>
-<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
 <!-- TopNavBar -->
-<header class="bg-surface/70 backdrop-blur-xl border-b border-white/10 shadow-[0_0_20px_rgba(202,190,255,0.15)] docked full-width top-0 sticky z-50">
-<nav class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max-width mx-auto h-20">
-<a class="font-display-xl-mobile text-display-xl-mobile font-extrabold tracking-tighter text-primary dark:text-primary" href="#">
-                VANSH
-            </a>
-<div class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant font-medium hover:text-secondary hover:scale-105 transition-all duration-300 font-label-caps text-label-caps" href="#">Home</a>
-<a aria-current="page" class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-secondary hover:scale-105 transition-all duration-300 font-label-caps text-label-caps" href="#">Portfolio</a>
-<a class="text-on-surface-variant font-medium hover:text-secondary hover:scale-105 transition-all duration-300 font-label-caps text-label-caps" href="#">Services</a>
-<a class="text-on-surface-variant font-medium hover:text-secondary hover:scale-105 transition-all duration-300 font-label-caps text-label-caps" href="#">About</a>
-<a class="text-on-surface-variant font-medium hover:text-secondary hover:scale-105 transition-all duration-300 font-label-caps text-label-caps" href="#">Contact</a>
-</div>
-<button class="hidden md:inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded-DEFAULT hover:scale-105 transition-transform duration-300 shadow-[0_0_15px_rgba(88,0,255,0.2)] hover:shadow-[0_0_25px_rgba(88,0,255,0.4)]">
-                Hire Me
-            </button>
-<button class="md:hidden text-on-surface p-2">
-<span class="material-symbols-outlined text-3xl">menu</span>
-</button>
-</nav>
-</header>
-<!-- Main Content -->
-<main class="flex-grow flex flex-col pt-section-gap-mobile md:pt-section-gap-desktop pb-section-gap-mobile md:pb-section-gap-desktop px-margin-mobile md:px-gutter max-w-container-max-width mx-auto w-full">
-<!-- Header Section -->
-<section class="mb-16 md:mb-24 max-w-3xl">
-<h1 class="font-display-xl-mobile text-display-xl-mobile md:font-display-xl md:text-display-xl text-on-surface mb-6">
-                My Work
-            </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
-                A showcase of projects I’ve designed for clients, highlighting creativity and functionality. Each project represents a unique challenge solved through thoughtful design and modern technology.
-            </p>
-</section>
-<!-- Portfolio Grid (Bento Style) -->
-<section class="grid grid-cols-1 md:grid-cols-12 gap-base md:gap-6">
-<!-- Project 1: Business Website -->
-<article class="glass-card glow-hover rounded-xl overflow-hidden group cursor-pointer col-span-1 md:col-span-8 relative aspect-[4/3] md:aspect-auto md:h-[500px] transition-all duration-500">
-<img alt="Project Preview" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" data-alt="A sleek, modern corporate website interface displayed on a high-end laptop screen, surrounded by minimal office decor. The design features a dark-mode theme with vibrant electric violet and neon blue accents, reflecting a tech-forward minimalist aesthetic. The layout is clean and professional, using crisp typography and glassmorphic elements. The lighting is sophisticated, emphasizing the crispness of the digital display against a dark, moody background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdXpvwsrbfl2mU7QVbeBTc6ugZBUiBoi9HRu_ODNdPFiOoOBEg39XZtVaVxWdzM8Q1teXkIJs1IeRp8LrgNfYOKeRtI_cIEIahbvpsqUxzsHkQFdVeOMrennhtDW8sq9CVI0wr3mVVDoK92SjJxUiPWaktORhCVvqXIo6OTUtw1HAFIFGGp4Lz4M--buf2OcSsnpG_Bep5XtAreNzlwl86wH5eXZvAZ-OLid2YgJX2GFMbM0g58ioy3en-frOwK4p21bjENwVx_6OK"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-surface-dim/50 to-transparent opacity-90"></div>
-<div class="absolute bottom-0 left-0 p-8 w-full">
-<div class="flex gap-2 mb-4">
-<span class="bg-surface/50 backdrop-blur-md border border-white/10 text-on-surface font-label-caps text-label-caps px-3 py-1 rounded-full">Web Design</span>
-<span class="bg-surface/50 backdrop-blur-md border border-white/10 text-on-surface font-label-caps text-label-caps px-3 py-1 rounded-full">UI/UX</span>
-</div>
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-2 group-hover:text-primary transition-colors">Business Website</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Modern UI overhaul focusing on conversion and premium brand positioning.</p>
-</div>
-</article>
-<!-- Project 2: E-commerce -->
-<article class="glass-card glow-hover rounded-xl overflow-hidden group cursor-pointer col-span-1 md:col-span-4 relative aspect-square md:h-[500px] transition-all duration-500">
-<img alt="Project Preview" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" data-alt="A responsive e-commerce mobile application interface shown on a floating smartphone mockup. The design highlights a dark theme with electric violet buttons and crisp white typography. The layout is highly functional, showcasing a product grid with subtle glassmorphic overlays. The background is a dark, abstract geometric pattern that complements the tech-forward, premium feel of the design system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlWEAnBTUKKzg1myXnPN79bRpm8sBmbEkuR-MjPlZ29ReXS267VJBY_9SqeN6iIAlFHH10QYMMnoQ6CXaKuDLVLHgiWz5mT0S8DyBf3XuEunz-TQ6FVjqCD90BhcgFlH9JEOIOAg6g9CC9dR6P1eK1ONTczJH1UeoTk0CtE4etPl0VHbJcIEY3R3hocuHXzkkS_QmQva7LXezsyvlXlxF2bfxYzsLR3ppdKRTrU5DzhfNzX-UZTZc81kxiZ6nOEoEVTvFSDsBlM2hG"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-surface-dim/60 to-transparent opacity-90"></div>
-<div class="absolute bottom-0 left-0 p-6 w-full">
-<div class="flex gap-2 mb-4 flex-wrap">
-<span class="bg-surface/50 backdrop-blur-md border border-white/10 text-on-surface font-label-caps text-label-caps px-3 py-1 rounded-full">E-commerce</span>
-</div>
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2 group-hover:text-primary transition-colors">Digital Storefront</h2>
-<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Responsive retail experience designed for seamless mobile shopping.</p>
-</div>
-</article>
-<!-- Project 3: Personal Portfolio -->
-<article class="glass-card glow-hover rounded-xl overflow-hidden group cursor-pointer col-span-1 md:col-span-4 relative aspect-square md:h-[400px] transition-all duration-500">
-<img alt="Project Preview" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" data-alt="A dynamic, interactive personal portfolio website shown on a sleek monitor. The design is bold and asymmetric, utilizing a dark background with striking neon blue highlights and smooth structural lines. It features large, confident typography and subtle glassmorphic panels. The overall mood is creative and cutting-edge, perfectly representing a modern digital craftsman." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWjpzA5KR4SpssQRaxGHtkNV-6CJzZ0v6HnOSv1P4ZL7zMiA5BnEOY9rT8A8q5ss59YAsSDMhAeNB3Z2cAEcVuBUdR7bCBzGpf5Y2ex7xyeI7nPvw7Jm7KvuSPd5HBbA8ZIyaFhzJ-9fc5S54iZq65__UHogAL2Tf7gUBUJ5NcbRDcfz6vFiMMDg6l6qLzm8NX0YZ39BLNVPWeEeAQxokSTKk06vfHjv3Fzux_WAP42qlnXU5kxcwEyQ1UvEm7Rt5UI60vDpSBA4nq"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-surface-dim/60 to-transparent opacity-90"></div>
-<div class="absolute bottom-0 left-0 p-6 w-full">
-<div class="flex gap-2 mb-4">
-<span class="bg-surface/50 backdrop-blur-md border border-white/10 text-on-surface font-label-caps text-label-caps px-3 py-1 rounded-full">Interaction</span>
-</div>
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2 group-hover:text-primary transition-colors">Creative Folio</h2>
-<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">A highly animated personal portfolio pushing the boundaries of web motion.</p>
-</div>
-</article>
-<!-- Project 4: Branding + Landing Page -->
-<article class="glass-card glow-hover rounded-xl overflow-hidden group cursor-pointer col-span-1 md:col-span-8 relative aspect-[4/3] md:aspect-auto md:h-[400px] transition-all duration-500">
-<img alt="Project Preview" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" data-alt="A comprehensive branding and landing page presentation for a creative agency, laid out in an expansive, grid-like digital environment. The color palette is strictly dark mode with sharp contrasts of stark white and electric violet. The layout includes custom logos, typography specimens, and a hero section featuring a soft neon glow effect. The scene conveys high-end digital craftsmanship and professional reliability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz41TQYY2oHOpJBx5y-Ppfym6SqpJaQZ06SagGiVA_Bzy8OIWCOtjwbJM5toUIOOyAvK-SOy0wlpMCS8-6n_bD9ICR3RzFxQko0dct02E0FYjExxN2oGXBAN-AvduVYk9QcQg1og9-06CPp94JocuG9Z8kyoZI1C545Rer81zxaAPkBY-IhH1I32p_DYceIi6TSpFFPwxGUiApj893Sf5aFAGremK8URq38Ea2BARqspDkp6UA1yNdo-5ZTex2BZXW2XHyGVRpAqoY"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-surface-dim/50 to-transparent opacity-90"></div>
-<div class="absolute bottom-0 left-0 p-8 w-full">
-<div class="flex gap-2 mb-4">
-<span class="bg-surface/50 backdrop-blur-md border border-white/10 text-on-surface font-label-caps text-label-caps px-3 py-1 rounded-full">Branding</span>
-<span class="bg-surface/50 backdrop-blur-md border border-white/10 text-on-surface font-label-caps text-label-caps px-3 py-1 rounded-full">Landing Page</span>
-</div>
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-2 group-hover:text-primary transition-colors">Creator Brand Identity</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Cohesive visual identity and high-converting landing page for digital creators.</p>
-</div>
-</article>
-</section>
-<!-- View All Action -->
-<div class="mt-16 text-center">
-<button class="inline-flex items-center justify-center gap-2 border border-outline-variant hover:border-primary text-on-surface hover:text-primary font-label-caps text-label-caps px-8 py-4 rounded-DEFAULT transition-all duration-300">
-                Load More Projects
-                <span class="material-symbols-outlined" style="font-size: 16px;">arrow_downward</span>
-</button>
-</div>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container-lowest border-t border-white/10 full-width bottom-0 mt-auto">
-<div class="flex flex-col md:flex-row justify-between items-center py-section-gap-mobile md:py-12 px-margin-mobile md:px-gutter max-w-container-max-width mx-auto gap-8">
-<div class="font-headline-lg text-headline-lg font-black text-on-surface">
+<header class="bg-surface/70 backdrop-blur-xl docked full-width top-0 sticky z-50 border-b border-white/10 shadow-[0_0_20px_rgba(202,190,255,0.15)]">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max-width mx-auto h-20">
+<!-- Brand Logo -->
+<div class="font-display-xl-mobile text-display-xl-mobile font-extrabold tracking-tighter text-primary dark:text-primary">
                 VANSH
             </div>
-<div class="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300 opacity-80 hover:opacity-100" href="#">Instagram: vanshcodes.x</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300 opacity-80 hover:opacity-100" href="#">Email: anubhavv8777@gmail.com</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300 opacity-80 hover:opacity-100" href="#">Phone: +91 9456853697</a>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex gap-8 items-center font-body-md text-body-md">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 scale-102 active:scale-95 transition-transform hover:text-secondary hover:scale-105 transition-all duration-300" href="#">Home</a>
+<a class="text-on-surface-variant font-medium scale-102 active:scale-95 transition-transform hover:text-secondary hover:scale-105 transition-all duration-300" href="#">Portfolio</a>
+<a class="text-on-surface-variant font-medium scale-102 active:scale-95 transition-transform hover:text-secondary hover:scale-105 transition-all duration-300" href="#">Services</a>
+<a class="text-on-surface-variant font-medium scale-102 active:scale-95 transition-transform hover:text-secondary hover:scale-105 transition-all duration-300" href="#">About</a>
+<a class="text-on-surface-variant font-medium scale-102 active:scale-95 transition-transform hover:text-secondary hover:scale-105 transition-all duration-300" href="#">Contact</a>
+</nav>
+<!-- Trailing Action -->
+<div class="hidden md:block">
+<button class="bg-surface-container-high text-on-surface font-label-caps text-label-caps px-6 py-3 rounded-full border border-white/10 hover:border-primary hover:text-primary scale-102 active:scale-95 transition-all duration-300 flex items-center gap-2">
+                    Hire Me
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
 </div>
-<div class="font-label-caps text-label-caps text-on-surface-variant">
+<!-- Mobile Menu Trigger -->
+<button class="md:hidden text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col items-center w-full">
+<!-- Hero Section -->
+<section class="w-full relative min-h-[921px] flex items-center pt-20 pb-section-gap-mobile md:py-section-gap-desktop px-margin-mobile md:px-gutter max-w-container-max-width mx-auto">
+<!-- Background Abstract Elements (Glassmorphism/Glow) -->
+<div class="absolute inset-0 pointer-events-none overflow-hidden flex items-center justify-center -z-10">
+<div class="absolute w-[600px] h-[600px] bg-primary-container rounded-full blur-[150px] opacity-20 top-[-10%] right-[-10%]"></div>
+<div class="absolute w-[400px] h-[400px] bg-secondary-container rounded-full blur-[120px] opacity-10 bottom-[10%] left-[-5%]"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center w-full relative z-10">
+<!-- Text Content -->
+<div class="md:col-span-7 flex flex-col items-start gap-8">
+<!-- Glass Chip -->
+<div class="bg-surface-container/50 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full font-label-caps text-label-caps text-secondary uppercase tracking-widest inline-flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#a6e6ff] animate-pulse"></span>
+                        Digital Craftsmanship
+                    </div>
+<h1 class="font-display-xl-mobile text-display-xl-mobile md:font-display-xl md:text-display-xl text-on-surface">
+                        Designing Premium Websites That Speak <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Your Brand.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl border-l-2 border-primary/30 pl-6 py-2">
+                        I’m Vansh, only 15, a creative web designer from India, passionate about building modern, attractive, and responsive websites for businesses and creators.
+                    </p>
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-4">
+<button class="bg-primary-container text-on-primary-container font-label-caps text-label-caps px-8 py-4 rounded-full uppercase tracking-widest btn-primary-glow scale-100 hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center gap-3">
+                            Get Started
+                            <span class="material-symbols-outlined text-sm">rocket_launch</span>
+</button>
+<p class="font-body-md text-body-md text-secondary font-medium">
+                            Let’s build your dream website today!
+                        </p>
+</div>
+<!-- Stats/Info mini layout -->
+<div class="grid grid-cols-2 gap-8 mt-12 pt-8 border-t border-white/10 w-full max-w-md">
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface">15+</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant mt-1">Years of Age</div>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface">India</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant mt-1">Based In</div>
+</div>
+</div>
+</div>
+<!-- Visual Content (Bento/Abstract Card) -->
+<div class="md:col-span-5 relative h-full min-h-[400px] w-full flex items-center justify-center hidden md:flex">
+<div class="relative w-full aspect-square max-w-md">
+<!-- Main Image Container with Glassmorphism border -->
+<div class="absolute inset-0 bg-surface-container rounded-2xl p-2 border border-white/10 neon-glow transform rotate-3 hover:rotate-0 transition-transform duration-700 ease-out z-10">
+<div class="w-full h-full rounded-xl overflow-hidden relative bg-surface">
+<img alt="Abstract digital art" class="w-full h-full object-cover opacity-80 mix-blend-lighten" data-alt="A striking abstract 3D digital artwork representing web design and digital craftsmanship. The composition features sleek, floating glassmorphic panels and geometric shapes glowing with electric violet and neon blue lights against a deep, dark minimalist background. The lighting is dramatic and futuristic, creating a premium, tech-forward aesthetic. The mood is innovative, cutting-edge, and highly professional, perfectly capturing a modern digital portfolio vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYPPmiAm_sgEyP6SHYcl5X1J21DoY4IIBz6zpc7_3Xa1DWzdJ3LCr3oxtkIJkGZZ_NTX6wjVhe8jTKegQ1EFZh6yFaghybi3hd6y6aPBZSuT28mQDVbZi-_fpn9SOUK0GHebiIV81cJgzerTd1zpiG0CXewIzQmdavjIqO09a7wPtFfEFC4CpUWvsaoTdtYDz3a_E2fhHuXogNyu_oqzPzVFx2Ncj13VQFpM_YecUp-Mbjm8nKH04e7tkGnGV6cZP-_ZfmlPVIzzMZ"/>
+<!-- Floating UI Element 1 -->
+<div class="absolute bottom-6 left-6 bg-surface/80 backdrop-blur-md border border-white/10 p-4 rounded-xl shadow-lg flex items-center gap-3 transform -translate-y-4">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">code</span>
+</div>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface">Modern Code</div>
+<div class="text-xs text-on-surface-variant">Clean &amp; Efficient</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Accent decorative element behind -->
+<div class="absolute inset-4 bg-gradient-to-tr from-primary-container to-secondary-container rounded-2xl opacity-40 blur-xl z-0 transform -rotate-6"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section class="w-full relative py-section-gap-mobile md:py-section-gap-desktop px-margin-mobile md:px-gutter max-w-container-max-width mx-auto" id="portfolio">
+<div class="flex flex-col gap-4 mb-16">
+<h2 class="font-display-xl-mobile text-display-xl-mobile md:font-headline-lg md:text-headline-lg text-on-surface">
+            Selected <span class="text-primary">Works</span>.
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            A showcase of recent projects, highlighting premium digital experiences tailored for forward-thinking brands.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+<!-- Project 1: Business Website -->
+<div class="group cursor-pointer">
+<div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 bg-surface-container-high border border-white/10 shadow-[0_0_20px_rgba(202,190,255,0.05)]">
+<img alt="Business Website" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7ba1KgXiqLOLFBrTG5bPNHr5Kol04c5G40nSaEAwY738QTRO3uJeXwtsGV7InZrRw0yRZkl-ZkMIQ1uZusZQuYVFvoFA99rO9ydoxCmhMMeSk4xl1q1zWcWk5NkC5DXMopef1nUw7Xjiedj_5JV-3IL1kq-9ojc1_Anx5y_HlYV8yBx8zgsBA_94xHKIYbKP2Q3bZ3c_iZlZRd8hCmlDpXlL6PgoRCXdQ_B0Vj1IRMqBoJj1MkaI8YXlJaddeT9QMJNP1UyEdlrZ6"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Corporate Tech</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface group-hover:text-primary transition-colors">Business Website</h3>
+</div>
+</div>
+<!-- Project 2: Digital Storefront -->
+<div class="group cursor-pointer md:mt-24">
+<div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 bg-surface-container-high border border-white/10 shadow-[0_0_20px_rgba(202,190,255,0.05)]">
+<img alt="Digital Storefront" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSXrUQ-RgxgmIxnNqifaYIfsQf87sNTgak2Ui9F2Vxt7ardQ7XLyXBCXIXPsKs8Zdipnz50N85-uaT6GjiO9GE2JxWv3toPZ60gDjr5oHwdYyRajRolq-lSOvbNDgG0JJAJPUC6qc6dbqRXwZNfil6GNAS_-EnNE6k9BIpIN7Tz4jzCgYmQ5bq4vrTZ3n_QDRUsx_BNnqwIkO5udAo0ZMb8yOQO_IjzDtiSUM8Q_sblBtPhtAUoi01jcHYESU_A-oKt-vq1X-3MZks"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">E-Commerce</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface group-hover:text-primary transition-colors">Digital Storefront</h3>
+</div>
+</div>
+<!-- Project 3: Creative Folio -->
+<div class="group cursor-pointer">
+<div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 bg-surface-container-high border border-white/10 shadow-[0_0_20px_rgba(202,190,255,0.05)]">
+<img alt="Creative Folio" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYz9KavQMW_1KzAoPqdTD9ktSCT86fAVFILz4DoEn5a7cSIiImvzusXovGBu4LX_zQ3v1hj-x8-3oUZv1L2MRObCQ4oUNfPyRPA0oQ6OKKp5PaLG-hyC3KdyFXleUqyYkl7p2aRcYapayaum164-qgb2kuaXhaTjSW-nPEn0L7S_fUzLc6wnLRldOG2FHlpUYE9m4IZ1nC1-g2LymkmMoHotATQ3lRxGcpJ4zMg_TyT_iM5Co_A7iLlO5Fb_AsjCsmOTvvgawhZO9h"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Design Agency</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface group-hover:text-primary transition-colors">Creative Folio</h3>
+</div>
+</div>
+<!-- Project 4: Creator Brand Identity -->
+<div class="group cursor-pointer md:mt-24">
+<div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 bg-surface-container-high border border-white/10 shadow-[0_0_20px_rgba(202,190,255,0.05)]">
+<img alt="Creator Brand Identity" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYHjsR3FqjtBlDR7XDJwh_s3CMmEX8TA6Ns0WB2RCyU4DqE9oMeA01Yo28d2Y_ScLqwtSt2156oXnWVfYmFtovL3mG0H5QrRVPld9mZhx4pwhOX6WQT6PBA2uP_4bZ13RrvYxzv1fqNOnrfEA3EvkQ9UnrCahRbDIWxq7DnphfNjbeFEZHD8w46dgXA-AUxHs7HIp6L7gQcfB-m8WfsKPsncL53NAlrKf3hbpXkXc1SNS2EmwunJ7xSs16bJBnbGD4glL7Oj46yEKd"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Personal Branding</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface group-hover:text-primary transition-colors">Creator Brand Identity</h3>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest full-width bottom-0 border-t border-white/10">
+<div class="flex flex-col md:flex-row justify-between items-center py-section-gap-mobile md:py-12 px-margin-mobile md:px-gutter max-w-container-max-width mx-auto gap-8">
+<!-- Brand Logo -->
+<div class="font-headline-lg text-headline-lg font-black text-on-surface opacity-80 hover:opacity-100 transition-opacity">
+                VANSH
+            </div>
+<!-- Links -->
+<div class="flex flex-col md:flex-row gap-6 items-center md:items-start text-center md:text-left">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300 opacity-80 hover:opacity-100" href="#">
+                    Instagram: vanshcodes.x
+                </a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300 opacity-80 hover:opacity-100" href="#">
+                    Email: anubhavv8777@gmail.com
+                </a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300 opacity-80 hover:opacity-100" href="#">
+                    Phone: +91 9456853697
+                </a>
+</div>
+<!-- Copyright -->
+<div class="font-label-caps text-label-caps text-secondary text-center md:text-right opacity-80">
                 © 2024 VANSH. DIGITAL CRAFTSMANSHIP.
             </div>
 </div>
