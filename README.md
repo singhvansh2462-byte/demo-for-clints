@@ -39,8 +39,19 @@
       text-align: center;
       position: relative;
     }
-    h1, h2 {
-      color: #00aaff;
+
+    /* Animated Gradient Text for Headings */
+    h1, h2, h3 {
+      background: linear-gradient(270deg, #001f4d, #004080, #00aaff, #001f4d);
+      background-size: 600% 600%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textFlow 8s linear infinite;
+    }
+    @keyframes textFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     #home {
@@ -73,21 +84,44 @@
       transform: scale(1.1) rotate(2deg);
     }
 
+    /* Card Styling with Animated Gradient Border */
     .card {
-      background: #0a0f2c;
-      border: 1px solid #00aaff;
-      border-radius: 10px;
+      background: #000;
+      border: 3px solid transparent;
+      border-radius: 12px;
       padding: 20px;
       margin: 20px;
       display: inline-block;
       width: 250px;
       transition: transform 0.5s, box-shadow 0.5s;
-      perspective: 1000px;
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      right: -3px;
+      bottom: -3px;
+      border-radius: 12px;
+      background: linear-gradient(270deg, #001f4d, #004080, #00aaff, #001f4d);
+      background-size: 600% 600%;
+      animation: borderFlow 8s linear infinite;
+      z-index: -1;
+    }
+    @keyframes borderFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
     .card:hover {
-      transform: rotateY(10deg) scale(1.05);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.7);
-      border-color: #ffaa00;
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(0, 170, 255, 0.6);
+    }
+    .card h3, .card p {
+      position: relative;
+      z-index: 1;
     }
 
     footer {
@@ -105,6 +139,7 @@
     <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#projects">Projects</a>
+    <a href="#pricing">Pricing</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -137,7 +172,44 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <p>Coming Soon...</p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+      <div class="card">
+        <img src="IMAGE1.jpg" alt="Contact Page Design" style="width:100%;border-radius:8px;">
+        <h3>Contact Page</h3>
+        <p>Modern layout with form, FAQ & map.</p>
+      </div>
+      <div class="card">
+        <img src="IMAGE2.jpg" alt="Agency Branding Layout" style="width:100%;border-radius:8px;">
+        <h3>Branding Agency</h3>
+        <p>Dark theme, neon accents, portfolio showcase.</p>
+      </div>
+      <div class="card">
+        <img src="IMAGE3.jpg" alt="Travel Website Layout" style="width:100%;border-radius:8px;">
+        <h3>Travel Website</h3>
+        <p>Tour packages, gallery & inspiration section.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Price List</h2>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+      <div class="card">
+        <h3>Basic Package</h3>
+        <p>1‑Page Website</p>
+        <p><strong>₹2,999</strong></p>
+      </div>
+      <div class="card">
+        <h3>Standard Package</h3>
+        <p>Multi‑Page + Animations</p>
+        <p><strong>₹6,999</strong></p>
+      </div>
+      <div class="card">
+        <h3>Premium Package</h3>
+        <p>Custom Design + Branding + SEO</p>
+        <p><strong>₹14,999</strong></p>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
@@ -154,7 +226,7 @@
   <!-- ScrollReveal Script -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <script>
-    ScrollReveal().reveal('h1, h2, p, .card, .btn', {
+    ScrollReveal().reveal('h1, h2, h3, p, .card, .btn', {
       duration: 1200,
       distance: '50px',
       origin: 'bottom',
