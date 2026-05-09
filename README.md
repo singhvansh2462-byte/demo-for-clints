@@ -1,303 +1,245 @@
-<!DOCTYPE html>
+# Vansh Portfolio - Full Website Code
 
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>VANSH - Portfolio</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@700;800;900&amp;family=Space+Grotesk:wght@600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-secondary-container": "#00566b",
-                        "on-secondary": "#003543",
-                        "on-primary-fixed-variant": "#4800d6",
-                        "tertiary-container": "#a22900",
-                        "secondary-fixed-dim": "#4cd6ff",
-                        "on-secondary-fixed": "#001f28",
-                        "inverse-surface": "#e6e0f0",
-                        "on-primary-container": "#cfc4ff",
-                        "surface-container-low": "#1c1a26",
-                        "surface-dim": "#14121d",
-                        "on-secondary-fixed-variant": "#004e60",
-                        "surface-bright": "#3a3744",
-                        "surface": "#14121d",
-                        "outline": "#938ea3",
-                        "on-error-container": "#ffdad6",
-                        "primary": "#cabeff",
-                        "surface-container-highest": "#363340",
-                        "on-surface-variant": "#cac3da",
-                        "surface-tint": "#cabeff",
-                        "on-tertiary-fixed-variant": "#872100",
-                        "error": "#ffb4ab",
-                        "inverse-primary": "#6128ff",
-                        "tertiary-fixed-dim": "#ffb5a0",
-                        "secondary": "#a6e6ff",
-                        "surface-container-lowest": "#0f0d18",
-                        "surface-container": "#201e2a",
-                        "secondary-fixed": "#b7eaff",
-                        "on-tertiary-fixed": "#3b0900",
-                        "background": "#14121d",
-                        "on-error": "#690005",
-                        "on-primary-fixed": "#1c0062",
-                        "on-background": "#e6e0f0",
-                        "surface-container-high": "#2b2834",
-                        "tertiary-fixed": "#ffdbd1",
-                        "primary-container": "#5800ff",
-                        "inverse-on-surface": "#312f3b",
-                        "primary-fixed": "#e6deff",
-                        "on-primary": "#32009a",
-                        "error-container": "#93000a",
-                        "primary-fixed-dim": "#cabeff",
-                        "outline-variant": "#484457",
-                        "secondary-container": "#14d1ff",
-                        "on-tertiary": "#601400",
-                        "surface-variant": "#363340",
-                        "tertiary": "#ffb5a0",
-                        "on-tertiary-container": "#ffbca9",
-                        "on-surface": "#e6e0f0"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "gutter": "24px",
-                        "base": "8px",
-                        "section-gap-desktop": "160px",
-                        "container-max-width": "1280px",
-                        "section-gap-mobile": "80px",
-                        "margin-mobile": "20px"
-                    },
-                    "fontFamily": {
-                        "headline-lg": ["Montserrat", "sans-serif"],
-                        "display-xl": ["Montserrat", "sans-serif"],
-                        "body-md": ["Inter", "sans-serif"],
-                        "headline-lg-mobile": ["Montserrat", "sans-serif"],
-                        "display-xl-mobile": ["Montserrat", "sans-serif"],
-                        "body-lg": ["Inter", "sans-serif"],
-                        "label-caps": ["Space Grotesk", "sans-serif"]
-                    },
-                    "fontSize": {
-                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }],
-                        "display-xl": ["80px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800" }],
-                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
-                        "display-xl-mobile": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600" }]
-                    }
-                }
-            }
-        }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        
-        /* Subtle glow for tech feel */
-        .neon-glow {
-            box-shadow: 0 0 40px rgba(202, 190, 255, 0.1);
-        }
-        
-        .btn-primary-glow {
-            box-shadow: 0 0 20px rgba(88, 0, 255, 0.3);
-        }
-        
-        .btn-primary-glow:hover {
-            box-shadow: 0 0 35px rgba(88, 0, 255, 0.5);
-        }
+Niche aapke portfolio ke sabhi pages ka code ek sath diya gaya hai. Aap inhe alag-alag files mein save kar sakte hain.
+
+---
+
+## 1. index.html (Home Page)
+<!-- Home Page - Vansh Portfolio -->
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <title>Home - Vansh Portfolio</title>
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #14121d; color: #ffffff; }
+        .glass { background: rgba(58, 55, 68, 0.3); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
     </style>
 </head>
-<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
-<!-- TopNavBar -->
-<header class="bg-surface/70 backdrop-blur-xl docked full-width top-0 sticky z-50 border-b border-white/10 shadow-[0_0_20px_rgba(202,190,255,0.15)]">
-<div class="flex justify-between items-center w-full px-gutter max-w-container-max-width mx-auto h-20">
-<!-- Brand Logo -->
-<div class="font-display-xl-mobile text-display-xl-mobile font-extrabold tracking-tighter text-primary dark:text-primary">
-                VANSH
+<body>
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 glass h-20 flex items-center px-8 justify-between border-b border-white/10">
+        <div class="text-3xl font-black tracking-tighter text-[#5800ff]">VANSH</div>
+        <div class="hidden md:flex gap-8 text-sm font-medium">
+            <a href="index.html" class="text-[#5800ff] border-b-2 border-[#5800ff] pb-1">Home</a>
+            <a href="portfolio.html" class="hover:text-[#5800ff] transition-colors">Portfolio</a>
+            <a href="services.html" class="hover:text-[#5800ff] transition-colors">Services</a>
+            <a href="about.html" class="hover:text-[#5800ff] transition-colors">About</a>
+            <a href="contact.html" class="hover:text-[#5800ff] transition-colors">Contact</a>
+        </div>
+        <a href="pricing.html" class="bg-[#5800ff] text-white px-6 py-2 rounded-lg font-bold hover:scale-105 transition-transform">Hire Me</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-[80vh] flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-20">
+        <div class="max-w-2xl">
+            <span class="inline-block px-4 py-1 rounded-full border border-white/20 text-[10px] tracking-widest uppercase mb-6">Digital Craftsmanship</span>
+            <h1 class="text-5xl md:text-7xl font-black leading-tight mb-8">
+                Designing <span class="text-[#5800ff]">Premium</span> Websites That Speak <span class="text-[#5800ff]">Your Brand.</span>
+            </h1>
+            <p class="text-lg text-gray-400 mb-10 max-w-lg">
+                I’m Vansh, only 15, a creative web designer from India, passionate about building modern, attractive, and responsive websites for businesses and creators.
+            </p>
+            <div class="flex items-center gap-6">
+                <a href="contact.html" class="bg-[#5800ff] px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:shadow-[0_0_20px_rgba(88,0,255,0.4)] transition-all">
+                    GET STARTED 🚀
+                </a>
+                <span class="text-gray-400 text-sm">Let’s build your dream website today!</span>
             </div>
-<!-- Navigation Links (Desktop) -->
-<nav class="hidden md:flex gap-8 items-center font-body-md text-body-md">
-<a class="text-primary font-bold border-b-2 border-primary pb-1 scale-102 active:scale-95 transition-transform hover:text-secondary hover:scale-105 transition-all duration-300" href="#">Home</a>
-<a class="text-on-surface-variant font-medium scale-102 active:scale-95 transition-transform hover:text-secondary hover:scale-105 transition-all duration-300" href="#">Portfolio</a>
-<a class="text-on-surface-variant font-medium scale-102 active:scale-95 transition-transform hover:text-secondary hover:scale-105 transition-all duration-300" href="#">Services</a>
-<a class="text-on-surface-variant font-medium scale-102 active:scale-95 transition-transform hover:text-secondary hover:scale-105 transition-all duration-300" href="#">About</a>
-<a class="text-on-surface-variant font-medium scale-102 active:scale-95 transition-transform hover:text-secondary hover:scale-105 transition-all duration-300" href="#">Contact</a>
-</nav>
-<!-- Trailing Action -->
-<div class="hidden md:block">
-<button class="bg-surface-container-high text-on-surface font-label-caps text-label-caps px-6 py-3 rounded-full border border-white/10 hover:border-primary hover:text-primary scale-102 active:scale-95 transition-all duration-300 flex items-center gap-2">
-                    Hire Me
-                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-</div>
-<!-- Mobile Menu Trigger -->
-<button class="md:hidden text-on-surface-variant hover:text-primary transition-colors">
-<span class="material-symbols-outlined text-3xl">menu</span>
-</button>
-</div>
-</header>
-<!-- Main Content -->
-<main class="flex-grow flex flex-col items-center w-full">
-<!-- Hero Section -->
-<section class="w-full relative min-h-[921px] flex items-center pt-20 pb-section-gap-mobile md:py-section-gap-desktop px-margin-mobile md:px-gutter max-w-container-max-width mx-auto">
-<!-- Background Abstract Elements (Glassmorphism/Glow) -->
-<div class="absolute inset-0 pointer-events-none overflow-hidden flex items-center justify-center -z-10">
-<div class="absolute w-[600px] h-[600px] bg-primary-container rounded-full blur-[150px] opacity-20 top-[-10%] right-[-10%]"></div>
-<div class="absolute w-[400px] h-[400px] bg-secondary-container rounded-full blur-[120px] opacity-10 bottom-[10%] left-[-5%]"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center w-full relative z-10">
-<!-- Text Content -->
-<div class="md:col-span-7 flex flex-col items-start gap-8">
-<!-- Glass Chip -->
-<div class="bg-surface-container/50 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full font-label-caps text-label-caps text-secondary uppercase tracking-widest inline-flex items-center gap-2">
-<span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#a6e6ff] animate-pulse"></span>
-                        Digital Craftsmanship
-                    </div>
-<h1 class="font-display-xl-mobile text-display-xl-mobile md:font-display-xl md:text-display-xl text-on-surface">
-                        Designing Premium Websites That Speak <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Your Brand.</span>
-</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl border-l-2 border-primary/30 pl-6 py-2">
-                        I’m Vansh, only 15, a creative web designer from India, passionate about building modern, attractive, and responsive websites for businesses and creators.
-                    </p>
-<div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-4">
-<button class="bg-primary-container text-on-primary-container font-label-caps text-label-caps px-8 py-4 rounded-full uppercase tracking-widest btn-primary-glow scale-100 hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center gap-3">
-                            Get Started
-                            <span class="material-symbols-outlined text-sm">rocket_launch</span>
-</button>
-<p class="font-body-md text-body-md text-secondary font-medium">
-                            Let’s build your dream website today!
-                        </p>
-</div>
-<!-- Stats/Info mini layout -->
-<div class="grid grid-cols-2 gap-8 mt-12 pt-8 border-t border-white/10 w-full max-w-md">
-<div>
-<div class="font-headline-lg text-headline-lg text-on-surface">15+</div>
-<div class="font-label-caps text-label-caps text-on-surface-variant mt-1">Years of Age</div>
-</div>
-<div>
-<div class="font-headline-lg text-headline-lg text-on-surface">India</div>
-<div class="font-label-caps text-label-caps text-on-surface-variant mt-1">Based In</div>
-</div>
-</div>
-</div>
-<!-- Visual Content (Bento/Abstract Card) -->
-<div class="md:col-span-5 relative h-full min-h-[400px] w-full flex items-center justify-center hidden md:flex">
-<div class="relative w-full aspect-square max-w-md">
-<!-- Main Image Container with Glassmorphism border -->
-<div class="absolute inset-0 bg-surface-container rounded-2xl p-2 border border-white/10 neon-glow transform rotate-3 hover:rotate-0 transition-transform duration-700 ease-out z-10">
-<div class="w-full h-full rounded-xl overflow-hidden relative bg-surface">
-<img alt="Abstract digital art" class="w-full h-full object-cover opacity-80 mix-blend-lighten" data-alt="A striking abstract 3D digital artwork representing web design and digital craftsmanship. The composition features sleek, floating glassmorphic panels and geometric shapes glowing with electric violet and neon blue lights against a deep, dark minimalist background. The lighting is dramatic and futuristic, creating a premium, tech-forward aesthetic. The mood is innovative, cutting-edge, and highly professional, perfectly capturing a modern digital portfolio vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYPPmiAm_sgEyP6SHYcl5X1J21DoY4IIBz6zpc7_3Xa1DWzdJ3LCr3oxtkIJkGZZ_NTX6wjVhe8jTKegQ1EFZh6yFaghybi3hd6y6aPBZSuT28mQDVbZi-_fpn9SOUK0GHebiIV81cJgzerTd1zpiG0CXewIzQmdavjIqO09a7wPtFfEFC4CpUWvsaoTdtYDz3a_E2fhHuXogNyu_oqzPzVFx2Ncj13VQFpM_YecUp-Mbjm8nKH04e7tkGnGV6cZP-_ZfmlPVIzzMZ"/>
-<!-- Floating UI Element 1 -->
-<div class="absolute bottom-6 left-6 bg-surface/80 backdrop-blur-md border border-white/10 p-4 rounded-xl shadow-lg flex items-center gap-3 transform -translate-y-4">
-<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-<span class="material-symbols-outlined text-primary">code</span>
-</div>
-<div>
-<div class="font-label-caps text-label-caps text-on-surface">Modern Code</div>
-<div class="text-xs text-on-surface-variant">Clean &amp; Efficient</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Accent decorative element behind -->
-<div class="absolute inset-4 bg-gradient-to-tr from-primary-container to-secondary-container rounded-2xl opacity-40 blur-xl z-0 transform -rotate-6"></div>
-</div>
-</div>
-</div>
-</section>
-<!-- Portfolio Section -->
-<section class="w-full relative py-section-gap-mobile md:py-section-gap-desktop px-margin-mobile md:px-gutter max-w-container-max-width mx-auto" id="portfolio">
-<div class="flex flex-col gap-4 mb-16">
-<h2 class="font-display-xl-mobile text-display-xl-mobile md:font-headline-lg md:text-headline-lg text-on-surface">
-            Selected <span class="text-primary">Works</span>.
-        </h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-            A showcase of recent projects, highlighting premium digital experiences tailored for forward-thinking brands.
+            
+            <div class="mt-20 flex gap-12">
+                <div>
+                    <div class="text-4xl font-black">15+</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-widest mt-2">Years of Age</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black">India</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-widest mt-2">Based In</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-20 md:mt-0 relative">
+            <div class="w-80 h-80 md:w-[500px] md:h-[500px] bg-gradient-to-tr from-[#5800ff] to-purple-400 rounded-3xl rotate-3 absolute -z-10 opacity-20 blur-2xl"></div>
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800" alt="UI Design" class="w-80 md:w-[500px] rounded-3xl shadow-2xl">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0f0d18] py-12 px-8 border-t border-white/10 mt-20">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-2xl font-black">VANSH</div>
+            <div class="flex flex-col md:flex-row gap-8 text-sm text-gray-400">
+                <span>Instagram: vanshcodes.x</span>
+                <span>Email: singhvansh2462@gmail.com</span>
+                <span>Phone: +91 9456853697</span>
+            </div>
+            <div class="text-xs text-gray-600">© 2024 VANSH. DIGITAL CRAFTSMANSHIP.</div>
+        </div>
+    </footer>
+</body>
+</html>
+
+---
+
+## 2. portfolio.html
+<!-- Portfolio Page - Vansh Portfolio -->
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <title>My Work - Vansh Portfolio</title>
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #14121d; color: #ffffff; }
+        .glass { background: rgba(58, 55, 68, 0.3); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 glass h-20 flex items-center px-8 justify-between border-b border-white/10">
+        <div class="text-3xl font-black tracking-tighter text-[#5800ff]">VANSH</div>
+        <div class="hidden md:flex gap-8 text-sm font-medium">
+            <a href="index.html" class="hover:text-[#5800ff] transition-colors">Home</a>
+            <a href="portfolio.html" class="text-[#5800ff] border-b-2 border-[#5800ff] pb-1">Portfolio</a>
+            <a href="services.html" class="hover:text-[#5800ff] transition-colors">Services</a>
+            <a href="about.html" class="hover:text-[#5800ff] transition-colors">About</a>
+            <a href="contact.html" class="hover:text-[#5800ff] transition-colors">Contact</a>
+        </div>
+        <a href="pricing.html" class="bg-[#5800ff] text-white px-6 py-2 rounded-lg font-bold">Hire Me</a>
+    </nav>
+
+    <!-- Portfolio Section -->
+    <section class="px-8 md:px-20 py-20">
+        <h1 class="text-6xl font-black mb-6">My <span class="text-[#5800ff]">Work</span></h1>
+        <p class="text-gray-400 text-lg max-w-2xl mb-16">
+            A showcase of projects I’ve designed for clients, highlighting creativity and functionality.
         </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-<!-- Project 1: Business Website -->
-<div class="group cursor-pointer">
-<div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 bg-surface-container-high border border-white/10 shadow-[0_0_20px_rgba(202,190,255,0.05)]">
-<img alt="Business Website" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7ba1KgXiqLOLFBrTG5bPNHr5Kol04c5G40nSaEAwY738QTRO3uJeXwtsGV7InZrRw0yRZkl-ZkMIQ1uZusZQuYVFvoFA99rO9ydoxCmhMMeSk4xl1q1zWcWk5NkC5DXMopef1nUw7Xjiedj_5JV-3IL1kq-9ojc1_Anx5y_HlYV8yBx8zgsBA_94xHKIYbKP2Q3bZ3c_iZlZRd8hCmlDpXlL6PgoRCXdQ_B0Vj1IRMqBoJj1MkaI8YXlJaddeT9QMJNP1UyEdlrZ6"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-</div>
-<div class="flex flex-col gap-2">
-<div class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Corporate Tech</div>
-<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface group-hover:text-primary transition-colors">Business Website</h3>
-</div>
-</div>
-<!-- Project 2: Digital Storefront -->
-<div class="group cursor-pointer md:mt-24">
-<div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 bg-surface-container-high border border-white/10 shadow-[0_0_20px_rgba(202,190,255,0.05)]">
-<img alt="Digital Storefront" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSXrUQ-RgxgmIxnNqifaYIfsQf87sNTgak2Ui9F2Vxt7ardQ7XLyXBCXIXPsKs8Zdipnz50N85-uaT6GjiO9GE2JxWv3toPZ60gDjr5oHwdYyRajRolq-lSOvbNDgG0JJAJPUC6qc6dbqRXwZNfil6GNAS_-EnNE6k9BIpIN7Tz4jzCgYmQ5bq4vrTZ3n_QDRUsx_BNnqwIkO5udAo0ZMb8yOQO_IjzDtiSUM8Q_sblBtPhtAUoi01jcHYESU_A-oKt-vq1X-3MZks"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-</div>
-<div class="flex flex-col gap-2">
-<div class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">E-Commerce</div>
-<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface group-hover:text-primary transition-colors">Digital Storefront</h3>
-</div>
-</div>
-<!-- Project 3: Creative Folio -->
-<div class="group cursor-pointer">
-<div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 bg-surface-container-high border border-white/10 shadow-[0_0_20px_rgba(202,190,255,0.05)]">
-<img alt="Creative Folio" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYz9KavQMW_1KzAoPqdTD9ktSCT86fAVFILz4DoEn5a7cSIiImvzusXovGBu4LX_zQ3v1hj-x8-3oUZv1L2MRObCQ4oUNfPyRPA0oQ6OKKp5PaLG-hyC3KdyFXleUqyYkl7p2aRcYapayaum164-qgb2kuaXhaTjSW-nPEn0L7S_fUzLc6wnLRldOG2FHlpUYE9m4IZ1nC1-g2LymkmMoHotATQ3lRxGcpJ4zMg_TyT_iM5Co_A7iLlO5Fb_AsjCsmOTvvgawhZO9h"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-</div>
-<div class="flex flex-col gap-2">
-<div class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Design Agency</div>
-<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface group-hover:text-primary transition-colors">Creative Folio</h3>
-</div>
-</div>
-<!-- Project 4: Creator Brand Identity -->
-<div class="group cursor-pointer md:mt-24">
-<div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 bg-surface-container-high border border-white/10 shadow-[0_0_20px_rgba(202,190,255,0.05)]">
-<img alt="Creator Brand Identity" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYHjsR3FqjtBlDR7XDJwh_s3CMmEX8TA6Ns0WB2RCyU4DqE9oMeA01Yo28d2Y_ScLqwtSt2156oXnWVfYmFtovL3mG0H5QrRVPld9mZhx4pwhOX6WQT6PBA2uP_4bZ13RrvYxzv1fqNOnrfEA3EvkQ9UnrCahRbDIWxq7DnphfNjbeFEZHD8w46dgXA-AUxHs7HIp6L7gQcfB-m8WfsKPsncL53NAlrKf3hbpXkXc1SNS2EmwunJ7xSs16bJBnbGD4glL7Oj46yEKd"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-</div>
-<div class="flex flex-col gap-2">
-<div class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Personal Branding</div>
-<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface group-hover:text-primary transition-colors">Creator Brand Identity</h3>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container-lowest full-width bottom-0 border-t border-white/10">
-<div class="flex flex-col md:flex-row justify-between items-center py-section-gap-mobile md:py-12 px-margin-mobile md:px-gutter max-w-container-max-width mx-auto gap-8">
-<!-- Brand Logo -->
-<div class="font-headline-lg text-headline-lg font-black text-on-surface opacity-80 hover:opacity-100 transition-opacity">
-                VANSH
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="group relative overflow-hidden rounded-3xl glass">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" class="w-full h-[400px] object-cover opacity-60 group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-[#14121d] to-transparent">
+                    <h3 class="text-3xl font-bold mb-2">Business Website</h3>
+                </div>
             </div>
-<!-- Links -->
-<div class="flex flex-col md:flex-row gap-6 items-center md:items-start text-center md:text-left">
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300 opacity-80 hover:opacity-100" href="#">
-                    Instagram: vanshcodes.x
-                </a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300 opacity-80 hover:opacity-100" href="#">
-                    Email: anubhavv8777@gmail.com
-                </a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300 opacity-80 hover:opacity-100" href="#">
-                    Phone: +91 9456853697
-                </a>
-</div>
-<!-- Copyright -->
-<div class="font-label-caps text-label-caps text-secondary text-center md:text-right opacity-80">
-                © 2024 VANSH. DIGITAL CRAFTSMANSHIP.
+            <div class="group relative overflow-hidden rounded-3xl glass">
+                <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&q=80&w=800" class="w-full h-[400px] object-cover opacity-60 group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-[#14121d] to-transparent">
+                    <h3 class="text-3xl font-bold mb-2">Digital Storefront</h3>
+                </div>
             </div>
-</div>
-</footer>
-</body></html>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0f0d18] py-12 px-8 border-t border-white/10 mt-20">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-2xl font-black">VANSH</div>
+            <div class="text-xs text-gray-600">© 2024 VANSH. DIGITAL CRAFTSMANSHIP.</div>
+        </div>
+    </footer>
+</body>
+</html>
+
+---
+
+## 3. pricing.html
+<!-- Pricing Page - Vansh Portfolio -->
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <title>Pricing Plans - Vansh Portfolio</title>
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #14121d; color: #ffffff; }
+        .glass { background: rgba(58, 55, 68, 0.3); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .plan-card:hover { transform: translateY(-10px); border-color: #5800ff; transition: all 0.3s ease; }
+    </style>
+</head>
+<body>
+    <nav class="sticky top-0 z-50 glass h-20 flex items-center px-8 justify-between border-b border-white/10">
+        <div class="text-3xl font-black tracking-tighter text-[#5800ff]">VANSH</div>
+        <div class="hidden md:flex gap-8 text-sm font-medium">
+            <a href="index.html" class="hover:text-[#5800ff] transition-colors">Home</a>
+            <a href="portfolio.html" class="hover:text-[#5800ff] transition-colors">Portfolio</a>
+            <a href="services.html" class="hover:text-[#5800ff] transition-colors">Services</a>
+            <a href="about.html" class="hover:text-[#5800ff] transition-colors">About</a>
+            <a href="contact.html" class="hover:text-[#5800ff] transition-colors">Contact</a>
+        </div>
+        <a href="pricing.html" class="bg-[#5800ff] text-white px-6 py-2 rounded-lg font-bold">Hire Me</a>
+    </nav>
+
+    <section class="px-8 md:px-20 py-24 text-center">
+        <h1 class="text-6xl font-black mb-20">Choose <span class="text-[#5800ff]">Your Plan</span></h1>
+        <div class="grid md:grid-cols-4 gap-8 text-left">
+            <!-- Simplified Plan Example -->
+            <div class="plan-card glass p-8 rounded-3xl flex flex-col border border-white/10">
+                <h3 class="text-3xl font-black mb-2">Basic</h3>
+                <div class="text-4xl font-black mb-10">₹5,000+</div>
+                <ul class="space-y-4 mb-10 text-gray-300">
+                    <li>✔ 1–3 Pages</li>
+                    <li>✔ Responsive</li>
+                </ul>
+                <button class="w-full py-4 rounded-xl border border-white/20 font-bold hover:bg-white/5 transition-colors">SELECT PLAN</button>
+            </div>
+            <!-- More cards would go here following the same structure -->
+        </div>
+    </section>
+</body>
+</html>
+
+---
+
+## 4. contact.html
+<!-- Contact Page - Vansh Portfolio -->
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <title>Contact - Vansh Portfolio</title>
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #14121d; color: #ffffff; }
+        .glass { background: rgba(58, 55, 68, 0.3); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        input, textarea { background: transparent !important; border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important; outline: none; }
+    </style>
+</head>
+<body>
+    <nav class="sticky top-0 z-50 glass h-20 flex items-center px-8 justify-between border-b border-white/10">
+        <div class="text-3xl font-black tracking-tighter text-[#5800ff]">VANSH</div>
+        <div class="hidden md:flex gap-8 text-sm font-medium">
+            <a href="index.html" class="hover:text-[#5800ff] transition-colors">Home</a>
+            <a href="portfolio.html" class="hover:text-[#5800ff] transition-colors">Portfolio</a>
+            <a href="services.html" class="hover:text-[#5800ff] transition-colors">Services</a>
+            <a href="about.html" class="hover:text-[#5800ff] transition-colors">About</a>
+            <a href="contact.html" class="text-[#5800ff] border-b-2 border-[#5800ff] pb-1">Contact</a>
+        </div>
+        <a href="pricing.html" class="bg-[#5800ff] text-white px-6 py-2 rounded-lg font-bold">Hire Me</a>
+    </nav>
+
+    <section class="px-8 md:px-20 py-24 flex flex-col md:flex-row gap-20">
+        <div class="md:w-2/3">
+            <h1 class="text-6xl font-black mb-10">Let’s <span class="text-[#5800ff]">Connect</span></h1>
+            <div class="glass p-12 rounded-3xl">
+                <form action="mailto:singhvansh2462@gmail.com" method="post" enctype="text/plain" class="space-y-12">
+                    <input type="text" placeholder="Name" class="w-full py-4 text-xl" required>
+                    <input type="email" placeholder="Email" class="w-full py-4 text-xl" required>
+                    <textarea rows="4" placeholder="Message" class="w-full py-4 text-xl resize-none" required></textarea>
+                    <button type="submit" class="bg-[#5800ff] text-white px-10 py-4 rounded-xl font-bold">Send Message ➤</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
