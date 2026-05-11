@@ -272,8 +272,8 @@ Vansh, niche aapke portfolio ke sabhi 4 professional pages ka code ek hi documen
             <div class="glass p-8 rounded-3xl space-y-6">
                 <p class="text-gray-300">Skilled in premium UI/UX design, development, and branding.</p>
                 <div class="space-y-4 text-sm text-gray-400">
-                    <p>📸 Instagram: vanshcodes.x</p>
-                    <p>📧 singhvansh2462@gmail.com</p>
+                    <p>📸 Instagram: nytrixxofficial.x</p>
+                    <p>📧 nytrixxofficial@gmail.com</p>
                     <p>📞 Phone: +91 9456853697</p>
                 </div>
             </div>
