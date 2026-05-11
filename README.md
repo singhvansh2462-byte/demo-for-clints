@@ -1,10 +1,3 @@
-# Vansh Portfolio - All-in-One Consolidated Code
-
-Vansh, niche aapke portfolio ke sabhi 4 professional pages ka code ek hi document mein diya gaya hai. Aap ise VS Code mein alag-alag files (`index.html`, `portfolio.html`, `pricing.html`, `contact.html`) bana kar save kar sakte hain.
-
----
-
-## 1. index.html (Home Page)
 <!-- Home Page - Vansh Portfolio -->
 <!DOCTYPE html>
 <html lang="hi">
@@ -84,7 +77,6 @@ Vansh, niche aapke portfolio ke sabhi 4 professional pages ka code ek hi documen
 
 ---
 
-## 2. portfolio.html (Work Page)
 <!-- Portfolio Page - Vansh Portfolio -->
 <!DOCTYPE html>
 <html lang="hi">
@@ -148,7 +140,6 @@ Vansh, niche aapke portfolio ke sabhi 4 professional pages ka code ek hi documen
 
 ---
 
-## 3. pricing.html (Plans Page)
 <!-- Pricing Page - Vansh Portfolio -->
 <!DOCTYPE html>
 <html lang="hi">
@@ -237,7 +228,6 @@ Vansh, niche aapke portfolio ke sabhi 4 professional pages ka code ek hi documen
 
 ---
 
-## 4. contact.html (Connect Page)
 <!-- Contact Page - Vansh Portfolio -->
 <!DOCTYPE html>
 <html lang="hi">
@@ -272,9 +262,9 @@ Vansh, niche aapke portfolio ke sabhi 4 professional pages ka code ek hi documen
             <div class="glass p-8 rounded-3xl space-y-6">
                 <p class="text-gray-300">Skilled in premium UI/UX design, development, and branding.</p>
                 <div class="space-y-4 text-sm text-gray-400">
-                    <p>📸 Instagram: nytrixxofficial.x</p>
-                    <p>📧 nytrixxofficial@gmail.com</p>
-                    <p>📞 Phone: +91 9456853697</p>
+                    <p>📸 Instagram: demo.x</p>
+                    <p>📧 demo@gmail.com</p>
+                    <p>📞 Phone: +91 0102030405</p>
                 </div>
             </div>
         </div>
