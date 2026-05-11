@@ -1,5 +1,4 @@
 <!-- Home Page - Vansh Portfolio -->
-<!DOCTYPE html>
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
@@ -78,7 +77,6 @@
 ---
 
 <!-- Portfolio Page - Vansh Portfolio -->
-<!DOCTYPE html>
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
@@ -141,7 +139,6 @@
 ---
 
 <!-- Pricing Page - Vansh Portfolio -->
-<!DOCTYPE html>
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
@@ -229,7 +226,6 @@
 ---
 
 <!-- Contact Page - Vansh Portfolio -->
-<!DOCTYPE html>
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
